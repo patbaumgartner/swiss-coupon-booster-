@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class JobRunrConfig {
 
 	@Bean
-	public StorageProvider storageProvider(JobMapper jobMapper) {
+	StorageProvider storageProvider(JobMapper jobMapper) {
 		InMemoryStorageProvider storageProvider = new InMemoryStorageProvider();
 		storageProvider.setJobMapper(new JobMapper(new JacksonJsonMapper()));
 		return storageProvider;

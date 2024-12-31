@@ -120,7 +120,7 @@
               <BP_JVM_CDS_ENABLED>true</BP_JVM_CDS_ENABLED>
 
               <BP_JVM_JLINK_ENABLED>true</BP_JVM_JLINK_ENABLED>
-              <BP_JVM_JLINK_ARGS>--add-modules java.base,java.compiler,java.desktop,java.instrument,java.management,java.naming,java.net.http,java.prefs,java.scripting,java.sql,jdk.jfr,jdk.unsupported --compress=2 --no-header-files --no-man-pages --strip-debug</BP_JVM_JLINK_ARGS>
+              <BP_JVM_JLINK_ARGS>--add-modules java.base,java.compiler,java.desktop,java.instrument,java.management,java.naming,java.net.http,java.prefs,java.scripting,java.sql,jdk.jfr,jdk.unsupported --compress=zip-6 --no-header-files --no-man-pages --strip-debug</BP_JVM_JLINK_ARGS>
             </env>
           </image>
         </configuration>

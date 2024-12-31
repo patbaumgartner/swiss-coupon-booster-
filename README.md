@@ -1,3 +1,5 @@
+![maven-docker-publish](https://github.com/patbaumgartner/swiss-coupon-booster/actions/workflows/maven-docker-publish.yml/badge.svg)
+
 # SwissCouponBooster
 
 SwissCouponBooster is an application designed to streamline the activation of digital coupons and "Bons" from Migros and Coop in Switzerland, helping users save money effortlessly.

@@ -1,24 +1,33 @@
-package com.patbumgartner.swiss.coupon.booster.runner;
+package com.patbaumgartner.swiss.coupon.booster.runner;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
+
+
 import org.jobrunr.jobs.annotations.Job;
 import org.jobrunr.jobs.annotations.Recurring;
 import org.springframework.stereotype.Component;
 
+import com.patbaumgartner.swiss.coupon.booster.tasks.ActivationTask;
+
 @Slf4j
 @Component
+@RequiredArgsConstructor
 public class CuponActivationRunner {
+
+	private final List<ActivationTask> activationTasks;
 
 	@Job(name = "Cupon Activation Job")
 	@Recurring(id = "cupon-activation-job", cron = "*/2 * * * *")
-	public void recurringJob() throws InterruptedException {
+	public void recurringJob() {
 		log.info("The cupon activation Job has begun.");
 		try {
-			Thread.sleep(5000);
+			activationTasks.forEach(ActivationTask::activate);
 		}
-		catch (InterruptedException e) {
+		catch (Exception e) {
 			log.error("Error while executing cupon activation job", e);
-			throw e;
 		}
 		finally {
 			log.info("The cupon activation job has finished...");

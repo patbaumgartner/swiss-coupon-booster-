@@ -1,4 +1,4 @@
-package com.patbumgartner.swiss.coupon.booster.configs;
+package com.patbaumgartner.swiss.coupon.booster.configs;
 
 import org.jobrunr.jobs.mappers.JobMapper;
 import org.jobrunr.storage.InMemoryStorageProvider;
@@ -7,7 +7,7 @@ import org.jobrunr.utils.mapper.jackson.JacksonJsonMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+@Configuration(proxyBeanMethods = false)
 public class JobRunrConfig {
 
 	@Bean

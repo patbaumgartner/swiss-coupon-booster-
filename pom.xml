@@ -10,7 +10,7 @@
     <!-- lookup parent from repository -->
   </parent>
 
-  <groupId>com.patbumgartner</groupId>
+  <groupId>com.patbaumgartner</groupId>
   <artifactId>swiss-coupon-booster</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 

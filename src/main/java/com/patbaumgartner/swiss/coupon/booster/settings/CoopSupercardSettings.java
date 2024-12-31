@@ -1,4 +1,4 @@
-package com.patbumgartner.swiss.coupon.booster.settings;
+package com.patbaumgartner.swiss.coupon.booster.settings;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

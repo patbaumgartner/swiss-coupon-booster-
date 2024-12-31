@@ -20,7 +20,7 @@
   <properties>
     <java.version>21</java.version>
     <spring-javaformat-maven-plugin.version>0.0.43</spring-javaformat-maven-plugin.version>
-    <sortpom-maven-plugin.version>3.4.0</sortpom-maven-plugin.version>
+    <sortpom-maven-plugin.version>4.0.0</sortpom-maven-plugin.version>
   </properties>
 
   <dependencies>

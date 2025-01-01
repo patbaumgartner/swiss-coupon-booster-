@@ -24,7 +24,7 @@ public class CuponActivationRunner {
 	public void recurringJob() {
 		log.info("The cupon activation Job has begun.");
 		try {
-			activationTasks.forEach(ActivationTask::activate);
+			activationTasks.forEach(ActivationTask::execute);
 		}
 		catch (Exception e) {
 			log.error("Error while executing cupon activation job", e);

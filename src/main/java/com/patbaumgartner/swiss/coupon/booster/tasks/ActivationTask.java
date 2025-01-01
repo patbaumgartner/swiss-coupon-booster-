@@ -2,6 +2,6 @@ package com.patbaumgartner.swiss.coupon.booster.tasks;
 
 public interface ActivationTask {
 
-	void activate();
+	void execute();
 
 }

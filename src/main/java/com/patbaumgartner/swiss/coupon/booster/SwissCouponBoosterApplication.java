@@ -6,9 +6,11 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 import com.patbaumgartner.swiss.coupon.booster.settings.CoopSupercardSettings;
 import com.patbaumgartner.swiss.coupon.booster.settings.MigrosAccountSettings;
+import com.patbaumgartner.swiss.coupon.booster.settings.MigrosCumulusSettings;
 
 @SpringBootApplication
-@EnableConfigurationProperties({ MigrosAccountSettings.class, CoopSupercardSettings.class })
+@EnableConfigurationProperties({ CoopSupercardSettings.class, MigrosAccountSettings.class,
+		MigrosCumulusSettings.class })
 public class SwissCouponBoosterApplication {
 
 	public static void main(String[] args) {
